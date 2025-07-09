@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>6ta Toma Noticias - Edición Digital</title>
+
+  <!-- Tipografía -->
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=Inter:wght@400;500&display=swap" rel="stylesheet" />
+
+  <style>
+    :root {
+      --cian: #00bcd4;
+      --celeste: #e0f7fa;
+      --texto: #012d35;
+    }
+
+    body {
+      margin: 0;
+      font-family: 'Inter', sans-serif;
+      background-color: var(--celeste);
+      color: var(--texto);
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+
+    header {
+      background: linear-gradient(90deg, var(--cian), #008ba3);
+      color: white;
+      padding: 2rem 1rem;
+      width: 100%;
+      text-align: center;
+      box-shadow: 0 2px 6px rgba(0, 0, 0, 0.2);
+    }
+
+    header h1 {
+      font-family: 'Playfair Display', serif;
+      font-size: 2.8rem;
+      margin: 0;
+      letter-spacing: 1px;
+    }
+
+    header p {
+      font-size: 1rem;
+      color: #e0f7fa;
+      margin-top: 8px;
+      font-weight: 500;
+    }
+
+    main {
+      padding: 2rem 1rem;
+      width: 100%;
+      max-width: 980px;
+    }
+
+    iframe.pdf {
+      width: 100%;
+      height: 88vh;
+      border: 2px solid var(--cian);
+      border-radius: 10px;
+      box-shadow: 0 0 25px rgba(0, 188, 212, 0.15);
+      background-color: white;
+    }
+
+    .opinion {
+      margin-top: 2.5rem;
+      background-color: white;
+      padding: 2rem;
+      border-radius: 12px;
+      box-shadow: 0 0 10px rgba(0,0,0,0.05);
+    }
+
+    .opinion h2 {
+      margin-top: 0;
+      color: var(--cian);
+    }
+
+    .youtube-button {
+      margin-top: 2rem;
+      display: inline-block;
+      background-color: #ff0000;
+      color: white;
+      padding: 0.9rem 1.5rem;
+      font-size: 1rem;
+      border: none;
+      border-radius: 30px;
+      text-decoration: none;
+      font-weight: bold;
+      transition: transform 0.2s ease, box-shadow 0.2s ease;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+    }
+
+    .youtube-button:hover {
+      transform: scale(1.05);
+      box-shadow: 0 6px 12px rgba(0,0,0,0.3);
+      background-color: #cc0000;
+    }
+
+    footer {
+      margin-top: 3rem;
+      padding: 1rem;
+      font-size: 0.9rem;
+      color: #066;
+      text-align: center;
+      border-top: 2px solid var(--cian);
+      width: 100%;
+      background-color: #f0fdff;
+    }
+
+    @media (max-width: 768px) {
+      header h1 {
+        font-size: 2rem;
+      }
+
+      iframe.pdf {
+        height: 75vh;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>6ta Toma Noticias</h1>
+    <p>Edición digital - Julio 2025</p>
+  </header>
+
+  <main>
+    <iframe class="pdf" src="SEXTA_TOMA_DIARIO_DIGITAL.pdf" title="Edición digital PDF"></iframe>
+
+    <div class="opinion">
+      <h2>¡Déjanos tu opinión!</h2>
+      <iframe src="https://docs.google.com/forms/d/e/1FAIpQLSeKywl1q3vhhNw_nQw0aL3mq-ZRwna2FqloFuRsJs5FjCZx_w/viewform?embedded=true"
+              width="100%" height="700" frameborder="0" marginheight="0" marginwidth="0">
+        Cargando…
+      </iframe>
+    </div>
+
+    <div style="text-align: center;">
+      <a class="youtube-button" href="https://www.youtube.com/@6TaToma" target="_blank">
+        Visítanos en YouTube
+      </a>
+    </div>
+  </main>
+
+  <footer>
+    &copy; 2025 Sexta Toma. Todos los derechos reservados.
+  </footer>
+
+</body>
+</html>
